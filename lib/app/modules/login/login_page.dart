@@ -20,14 +20,6 @@ class _LoginPageState extends State<LoginPage> {
     final TextEditingController userController = TextEditingController();
     final TextEditingController passwordController = TextEditingController();
 
-    /*final Uri _url = Uri.parse('https://google.com.br');
-
-    Future<void> _launchUrl() async {
-      if (!await launchUrl(_url)) {
-        throw Exception('Could not launch $_url');
-      }
-    }*/
-
     return Scaffold(
       backgroundColor: Colors.green,
       body: Stack(
