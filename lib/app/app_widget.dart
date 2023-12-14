@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_target_test/app/modules/home/home_page.dart';
-import 'package:flutter_target_test/app/modules/home/stores/list_store.dart';
 import 'package:flutter_target_test/app/modules/login/login_page.dart';
-import 'package:provider/provider.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -16,7 +14,7 @@ class AppWidget extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/home",
+      initialRoute: "/login",
       routes: {
         "/login": (context) => const LoginPage(),
         "/home": (context) => const HomePage()
