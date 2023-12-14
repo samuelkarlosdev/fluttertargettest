@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,11 +24,11 @@ abstract class _ListStore with Store {
   Future getListItemShared() async {
     var shared = await SharedPreferences.getInstance();
     listTemp = shared.getStringList(keyList);
-    debugPrint("listTemp $listTemp");
+    //debugPrint("listTemp $listTemp");
     if (listTemp != null) {
       listItem.addAll(listTemp!.toList());
     }
-    debugPrint("listStoreItem $listItem");
+    //debugPrint("listStoreItem $listItem");
   }
 
   @action
